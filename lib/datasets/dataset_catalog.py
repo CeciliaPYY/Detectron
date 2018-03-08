@@ -24,6 +24,7 @@ import os
 
 
 # Path to data dir
+# __file__ --> /detectron/lib/datasets/
 _DATA_DIR = os.path.join(os.path.dirname(__file__), 'data')
 
 # Required dataset entry keys
