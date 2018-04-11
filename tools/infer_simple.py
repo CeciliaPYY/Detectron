@@ -130,7 +130,7 @@ def main(args):
             im_name,
             args.output_dir,
             cls_boxes,
-            cls_segms,
+            cls_segms, ###############cls_segms######################
             cls_keyps,
             dataset=dummy_coco_dataset,
             box_alpha=0.3,
