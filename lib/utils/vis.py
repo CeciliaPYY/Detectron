@@ -259,6 +259,8 @@ def vis_one_image(
     if isinstance(boxes, list):
         boxes, segms, keypoints, classes = convert_from_cls_format(
             boxes, segms, keypoints)
+        
+     print(segms)#########################
 
     if boxes is None or boxes.shape[0] == 0 or max(boxes[:, 4]) < thresh:
         return
