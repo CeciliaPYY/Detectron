@@ -321,7 +321,7 @@ def vis_one_image(
                 color_mask[c] = color_mask[c] * (1 - w_ratio) + w_ratio
             for c in range(3):
                 img[:, :, c] = color_mask[c]
-            e = masks[:, :, i]
+            e = masks[:, :, i] ############################################e######################
 
             _, contour, hier = cv2.findContours(
                 e.copy(), cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
