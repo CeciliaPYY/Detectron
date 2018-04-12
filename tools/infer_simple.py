@@ -125,6 +125,7 @@ def main(args):
                 'rest (caches and auto-tuning need to warm up)'
             )
 
+'''            
         vis_utils.vis_one_image(
             im[:, :, ::-1],  # BGR -> RGB for visualization
             im_name,
@@ -137,6 +138,18 @@ def main(args):
             show_class=True,
             thresh=0.7,
             kp_thresh=2
+        )
+ '''
+        vis_utils.vis_one_image_opencv(
+            im[:, :, ::-1], 
+            cls_boxes, 
+            cls_segms, 
+            cls_keyps, 
+            thresh=0.7, 
+            kp_thresh=2,
+            show_box=False, 
+            dataset=dummy_coco_dataset, 
+            show_class=True
         )
 
 
